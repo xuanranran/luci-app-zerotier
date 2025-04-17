@@ -27,8 +27,8 @@ start_instance() {
 		return 1
 	fi
 
-	[ -d /etc/zerotier ] || mkdir -p /etc/zerotier
-	config_path=/etc/zerotier
+	[ -d /etc/config/zero ] || mkdir -p /etc/config/zero
+	config_path=/etc/config/zero
 
 	config_get_bool port $cfg 'port'
 	config_get secret $cfg 'secret'
